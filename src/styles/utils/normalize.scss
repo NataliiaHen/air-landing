@@ -23,29 +23,36 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 1px solid $dark-grey;
+  border: none;
   -webkit-text-fill-color: $white;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  -webkit-box-shadow: 0 0 0px 1000px $dark-grey inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-::-webkit-scrollbar {
+
+input::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
+  background: $c-gray;
   width: 10px;
+  border-radius: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+input::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
   background: $c-gray;
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+textarea::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+input::-webkit-scrollbar-thumb:hover,
+textarea::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
