@@ -43,7 +43,9 @@
     }
   }
 
-  &__button {
+  &__link {
+    display: inline-block;
+    line-height: 50px;
     margin-top: 86px;
     height: 50px;
 

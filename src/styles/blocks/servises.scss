@@ -122,13 +122,8 @@
     margin-top: 32px;
 
     &-link {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      text-decoration: none;
-    }
 
-    &-button {
+      text-decoration: none;
       display: flex;
       justify-content: center;
       align-items: center;
